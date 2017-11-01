@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Влада](https://up.htmlacademy.ru/htmlcss/19/user/432959).
-* Наставник: [Екатерина Анплитова].
+* Наставник: [Екатерина Анплитова](https://htmlacademy.ru/profile/anplitova).
 
 ---
 
