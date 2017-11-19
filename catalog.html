@@ -35,6 +35,9 @@
                <a class="link-login" href="#">Равшан Джамшутович</a>
            </li>
            <li>
+               <a class="link-out" href="#"><img src="#" alt="Выход"></a>
+           </li>
+           <li>
                <a class="link-orders" href="#">Мои заказы</a>
            </li>
            <li>
@@ -46,13 +49,13 @@
          <nav class="main-navigation">
              <ul class="navigation">
                  <li>
-                     <a>Главная</a>
+                     <a href="index.html">Главная</a>
                  </li>
                  <li>
                      <a href="#">Компания</a>
                  </li>
                  <li>
-                     <a href="catalog.html">Каталог</a>
+                     <a>Каталог</a>
                  </li>
                  <li>
                      <a href="#">Новости</a>
@@ -73,57 +76,79 @@
   
   <main class="container">
       <h1 class="page-title">Перфораторы</h1>
-      <ul class="breadcrumps">
+      <ul class="breadcrumbs">
          <li><a href="index.html" class="breadcrumps-home"></a></li>
          <li><a href="#">Каталог</a></li>  
          <li><a href=#>Инструмент</a></li>        
          <li>Перфораторы</li>
       </ul>
-      <section class="filters">
+      <form class="filters" method="get" action="https://echo.htmlacademy.ru/">
           <h2>Фильтр:</h2>
-          <div class="filters-price">
-              <h3>Цена:</h3>
-          </div>
-          <div class="filters-manufacturers">
-              <h3>Производители:</h3>
-              <label>
-                  Bosch
-                  <input type="checkbox" name="manufacturers" value="bosch" checked>
-              </label>
-              <label>
-                  Интерскол
-                  <input type="checkbox" name="manufacturers" value="interskol">
-              </label>
-              <label>
-                  Makita
-                  <input type="checkbox" name="manufacturers" value="makita" checked>
-              </label>
-              <label>
-                  Dewalt
-                  <input type="checkbox" name="manufacturers" value="dewalt">
-              </label>
-              <label>
-                  Hitachi
-                  <input type="checkbox" name="manufacturers" value="hitachi">
-              </label>
-          </div>
-          <div class="filters-supply">
-              <h3>Питание:</h3>
-              <label>
-                  Аккумуляторные
-                  <input type="radio" name="supply" value="battery" checked>
-              </label>
-              <label>
-                  Сетевые
-                  <input type="radio" name="supply" value="mains" checked>
-              </label>
-          </div>
-          <input type="submit" value="Показать">
-      </section>
-      <section class="sorting">
+          <fieldset>
+              <legend>Цена:</legend>
+              <div class="range-content">
+                  <div class="range-line">
+                      <div class="range-value" style="width: 85%"></div>
+                      <button class="range-button range-button-left" type="button"></button>
+                      <button class="range-button range-button-right" type="button"></button>
+                  </div>
+              </div>
+              <div class="range-price">
+                  <input class="range-input" type="text" value="0">
+                  <span class="range-text"></span>
+                  <input class="range-input" type="text" value="30000">
+              </div>
+          </fieldset>
+          <fieldset>
+              <legend>Производители:</legend>
+              <ul>
+                  <li>
+                      <label for="bosch">Bosch</label>
+                      <input id="bosch" type="checkbox" name="brand" value="bosch" checked>
+                  </li>
+                  <li>
+                      <label for="interskol">Интерскол</label>
+                      <input id="interskol" type="checkbox" name="brand" value="interskol">
+                  </li>
+                  <li>
+                      <label for="makita">Makita</label>
+                      <input id="makita" type="checkbox" name="brand" value="makita" checked>
+                  </li>
+                  <li>
+                      <label for="dewalt">Dewalt</label>
+                      <input id="dewalt" type="checkbox" name="brand" value="dewalt">
+                  </li>
+                  <li>
+                      <label for="hitachi">Hitachi</label>
+                      <input id="hitachi" type="checkbox" name="brand" value="hitachi">
+                  </li>                 
+              </ul>
+          </fieldset>
+          <fieldset>
+              <legend>Питание:</legend>
+              <ul>
+                  <li>
+                      <label for="battery">Аккумуляторные</label>
+                      <input id="battery" type="radio" name="supply" value="battery" checked>
+                  </li>
+                  <li>
+                      <label for="mains">Сетевые</label>
+                      <input id="mains" type="radio" name="supply" value="mains">
+                  </li>
+              </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+      </form>
+      <form class="sorting">
           <h2>Сортировка:</h2>
-          <!-- Форма -->
-      </section>
+          <ul>
+              <li><a href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По функционалу</a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+          </ul>
+      </form>
       <section class="catalog">
           <h2 class="visually-hidden">Список перфораторов</h2>
           <ul class="catalog-list">
@@ -288,7 +313,7 @@
            </li>  
           </ul>
           <ul class="pagination-list">
-              <li><a class="item-current">1</a></li>
+              <li><a class="page-active">1</a></li>
               <li><a href="#">2</a></li>
               <li><a href="#">3</a></li>
               <li><a href="#">Следующая</a></li>
