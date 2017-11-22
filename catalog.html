@@ -75,13 +75,13 @@
   </header>
   
   <main class="container">
-      <h1 class="page-title">Перфораторы</h1>
       <ul class="breadcrumbs">
          <li><a href="index.html" class="breadcrumps-home"></a></li>
          <li><a href="#">Каталог</a></li>  
          <li><a href=#>Инструмент</a></li>        
          <li>Перфораторы</li>
       </ul>
+      <h1 class="page-title">Перфораторы</h1>
       <form class="filters" method="get" action="https://echo.htmlacademy.ru/">
           <h2>Фильтр:</h2>
           <fieldset>
@@ -145,8 +145,8 @@
               <li><a href="#">По цене</a></li>
               <li><a href="#">По типу</a></li>
               <li><a href="#">По функционалу</a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
+              <li><a href="#" class="visually-hidden">По возрастанию</a></li>
+              <li><a href="#" class="visually-hidden">По убыванию</a></li>
           </ul>
       </form>
       <section class="catalog">
@@ -363,8 +363,8 @@
   <article class="modal-basket">
       <h3 class="visually-hidden">Товар добавлен в корзину!</h3>
       <a class="checkout" href="#">Оформить заказ</a>
-      <span class="modal-close">Продолжить покупки</span>
-      <span class="modal-close">x</span>
+      <button class="modal-close">Продолжить покупки</button>
+      <button class="modal-close visually-hidden">Закрыть</button>
   </article>
   
   </body>
